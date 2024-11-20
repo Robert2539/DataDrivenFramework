@@ -16,7 +16,7 @@ echo "Hi deploying project from jenkins"
 
 stage('test'){
 steps{
-echo "Hi testing project from jenkins"
+ mvn test
 }
 }
 
