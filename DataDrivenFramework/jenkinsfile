@@ -17,7 +17,7 @@ echo "Hi deploying project from jenkins"
 stage('test'){
 steps{
  echo "Hi Testing project from jenkins"
- bat 'mvn -f DataDrivenFramework/DataDrivenFramework/pom.xml test'
+ bat 'mvn -f DataDrivenFramework/DataDrivenFramework/pom.xml clean'
 
 }
 }
