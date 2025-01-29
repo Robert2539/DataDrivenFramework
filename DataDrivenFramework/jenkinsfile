@@ -11,13 +11,14 @@ echo "Hi building project from jenkins"
 stage('deploy'){
 steps{
 echo "Hi deploying project from jenkins"
+bat 'mvn --f DataDrivenFramework/pom.xml clean'
 }
 }
 
 stage('test'){
 steps{
  echo "Hi Testing project from jenkins"
- bat 'mvn --f DataDrivenFramework/pom.xml clean'
+ bat 'mvn --f DataDrivenFramework/pom.xml test'
 
 }
 }
